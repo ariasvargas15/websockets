@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:8080', { 'forceNew': true });
+var socket = io.connect('http://ec2-54-237-93-215.compute-1.amazonaws.com:8080', { 'forceNew': true });
 
 socket.on('messages', function(data) {
   console.log(data);
